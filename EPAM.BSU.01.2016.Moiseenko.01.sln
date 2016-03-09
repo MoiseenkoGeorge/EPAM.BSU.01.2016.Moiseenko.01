@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPAM.BSU.01.2016.Moiseenko.Task1", "EPAM.BSU.01.2016.Moiseenko.01\EPAM.BSU.01.2016.Moiseenko.Task1.csproj", "{EEC42C0E-FB01-45AD-A8B0-10D45F990FE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPAM.BSU.01.2016.Moiseenko.Task2", "EPAM.BSU.01.2016.Moiseenko.Task2\EPAM.BSU.01.2016.Moiseenko.Task2.csproj", "{15AB837A-D890-4A12-BF8F-F0116FE6DC8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEC42C0E-FB01-45AD-A8B0-10D45F990FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC42C0E-FB01-45AD-A8B0-10D45F990FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC42C0E-FB01-45AD-A8B0-10D45F990FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC42C0E-FB01-45AD-A8B0-10D45F990FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15AB837A-D890-4A12-BF8F-F0116FE6DC8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15AB837A-D890-4A12-BF8F-F0116FE6DC8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15AB837A-D890-4A12-BF8F-F0116FE6DC8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15AB837A-D890-4A12-BF8F-F0116FE6DC8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
