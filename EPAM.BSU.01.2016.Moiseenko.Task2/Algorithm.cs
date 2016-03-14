@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EPAM.BSU._01._2016.Moiseenko.Task2
+namespace Task2
 {
     public static class Algorithm
     {

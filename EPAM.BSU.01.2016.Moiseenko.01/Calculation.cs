@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EPAM.BSU._01._2016.Moiseenko.Task1
+namespace Task1
 {
-    internal class Calculation
+    public class Calculation
     {
         /// <param name="x">A double-precision floating-point number which radix will find </param>
         /// <param name="n">A integer number that specifies a power</param>
@@ -14,6 +14,10 @@ namespace EPAM.BSU._01._2016.Moiseenko.Task1
         /// <returns>Returns a specified number that specifies radix of x</returns>
         public static double Radix(double x, int n, double eps)
         {
+            if (n == 0)
+                throw new ArgumentOutOfRangeException(nameof(n), "Require positive number");
+            if (x < 0 && n % 2 == 0)
+                throw new ArgumentOutOfRangeException(nameof(n), "Require odd number");
             double radix = 1, nextRadix;
             while (true)
             {
