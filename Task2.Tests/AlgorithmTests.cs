@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
@@ -12,7 +13,7 @@ namespace Task2.Tests
     {
         [Test]
         [TestCase(Result = 9)]
-        public int BubbleSort_BySum()
+        public int BubbleSort_BySumThrowInterface()
         {
             ComparerBySum cbs = new ComparerBySum();
             int[][] array = new int[][]
@@ -21,22 +22,23 @@ namespace Task2.Tests
                 new int[] {4,5,6},
                 new int[] {1,2,3}
             };
-            array.BubbleSort(cbs);
+            array.BubbleSortByInterfaceThrowDelegate(cbs);
             return array[2][2];
         }
+
         [Test]
-        [TestCase(Result = -9)]
-        public int BubbleSort_ByMaxAbs()
+        [TestCase(Result = 9)]
+        public int BubbleSort_BySumThrowDelegate()
         {
-            ComparerByMaxAbs cbms = new ComparerByMaxAbs();
             int[][] array = new int[][]
             {
-                new int[] {1,2,-9},
+                new int[] {7,8,9},
                 new int[] {4,5,6},
-                new int[] {1,7,3}
+                new int[] {1,2,3}
             };
-            array.BubbleSort(cbms);
+            array.BubbleSortByDelegateThrowInterface((x,y) => x.Sum().CompareTo(y.Sum()));
             return array[2][2];
         }
+
     }
 }
